@@ -31,7 +31,7 @@ class ViewController: UIViewController {
                         inputNum.text = ""
                     }else if input > min && remainTimes == 1 {
                         alertRestartMessage(isWin: false)
-                    }else if input < min{
+                    }else if input <= min{
                         alertMessage(message: "Guess Bigger!!")
                         inputNum.text = ""
                     }
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
                         inputNum.text = ""
                     }else if input < max && remainTimes == 1 {
                         alertRestartMessage(isWin: false)
-                    }else if input > max{
+                    }else if input >= max{
                         alertMessage(message: "Guess Smaller!!")
                         inputNum.text = ""
                     }
